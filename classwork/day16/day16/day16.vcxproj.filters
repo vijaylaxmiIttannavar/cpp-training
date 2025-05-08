@@ -15,40 +15,34 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="swap.cpp">
+    <ClCompile Include="large_smal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="area.cpp">
+    <ClCompile Include="s_small.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="command.cpp">
+    <ClCompile Include="sort_small.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="rm_allspc.cpp">
+    <ClCompile Include="remove_dup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="natural.cpp">
+    <ClCompile Include="star_dimd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="fact.cpp">
+    <ClCompile Include="loop4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="wash.cpp">
+    <ClCompile Include="rev_str.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pald_ornot.cpp">
+    <ClCompile Include="rev2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="array_pal.cpp">
+    <ClCompile Include="token_rev.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="armstrongn.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="range_armstrong.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="gcd.cpp">
+    <ClCompile Include="getword.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
