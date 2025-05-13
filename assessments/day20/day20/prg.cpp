@@ -1,6 +1,6 @@
 #include<iostream>
 #define MAX 50
-int salaryCalc(int, int, int, int, int);
+
 using namespace std;
 int main()
 {
