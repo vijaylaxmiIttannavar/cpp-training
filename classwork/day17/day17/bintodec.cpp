@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <math.h>
 using namespace std;
 
@@ -23,4 +23,36 @@ int main() {
    cout<< binaryToDecimal(binary);
 
     return 0;
+}*/
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int binarytodec(int num, int base)
+{
+    int r, place = 0, sum = 0;
+
+    while (num)
+    {
+        r = num % 10;
+        sum += r * pow(base, place);
+        place++;
+        num /= 10;
+
+    }
+
+    return sum;
 }
+
+int main() {
+
+    cout << binarytodec(101, 2);
+
+    return 0;
+}
+
+
+
+

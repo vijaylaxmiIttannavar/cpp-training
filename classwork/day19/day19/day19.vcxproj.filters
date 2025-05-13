@@ -15,46 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="annagram.cpp">
+    <ClCompile Include="pointer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pattern1.cpp">
+    <ClCompile Include="p1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pattern2.cpp">
+    <ClCompile Include="prg02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pattern3.cpp">
+    <ClCompile Include="prg03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="inv_pattern.cpp">
+    <ClCompile Include="prg04.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pattern4.cpp">
+    <ClCompile Include="prg05.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pascal.cpp">
+    <ClCompile Include="prg06.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ex.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sunnatural.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="swap.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="octtodec.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="hexatodec.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bintodec.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dectoall_conv.cpp">
+    <ClCompile Include="prg07.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
