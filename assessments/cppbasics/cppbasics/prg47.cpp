@@ -1,7 +1,7 @@
 #include <cmath>
 #include <iostream>
 
-using namespace std;
+using namespace std;          //hex  to dec
 
 int fun(char hexDigit)
 {
