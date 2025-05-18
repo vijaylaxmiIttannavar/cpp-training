@@ -2,7 +2,7 @@
 #include <math.h>
 using namespace std;
 
-int Decimaltoall(int num, int base)
+int Decimaltoall(int num, int base)          //dc to octa
 {
     int r, place = 0, sum = 0;
 

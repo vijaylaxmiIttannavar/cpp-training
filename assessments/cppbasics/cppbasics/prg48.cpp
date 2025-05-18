@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void fun(int decimal) 
+void fun(int decimal)    
 {
     int binary[32]; 
     int index = 0;
