@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="funover.cpp">
+    <ClCompile Include="prg2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prg3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

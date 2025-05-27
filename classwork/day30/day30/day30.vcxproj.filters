@@ -15,8 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="funover.cpp">
+    <ClCompile Include="employee\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="employee\employee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="employee\node.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="employee\employee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="employee\node.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
