@@ -93,7 +93,7 @@ float Employee::Update_Salary_ID(int id, float sal)
 	{
 		if (id == head->getid())
 		{
-			c = 0;
+			head->setsalary(sal);
 			cout << "Salary updated for ID " << id << endl;
 			break;
 		}

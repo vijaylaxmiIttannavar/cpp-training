@@ -15,26 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="employee\employee.cpp">
+    <ClCompile Include="prg02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="employee\main.cpp">
+    <ClCompile Include="prg03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="employee\node.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="employee\employee.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="employee\node.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="employee\text.txt" />
-    <Text Include="employee\input.txt" />
   </ItemGroup>
 </Project>

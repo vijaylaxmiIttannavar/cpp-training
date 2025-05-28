@@ -1,0 +1,4 @@
+Enter Roll No: 101
+Enter Name: Alice
+Enter Age: 20
+Enter Marks: 89 76 91
