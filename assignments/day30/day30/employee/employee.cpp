@@ -10,11 +10,11 @@ int Employee::Add_Employee(int e_id, char* name, float salary)
 	nn->setid(e_id);
 	nn->setname(name);
 	nn->setsalary(salary);
-	int c = 0;
+	
 	if (head == nullptr)
 	{
 		head = nn;
-		c++;
+		
 	}
 	else
 	{
@@ -22,13 +22,12 @@ int Employee::Add_Employee(int e_id, char* name, float salary)
 		while (temp->getNext() != nullptr)
 			temp = temp->getNext();
 		temp->setNext(nn);
-		return c++;
 	}
 	cout << "Employee added: " << name << endl;
 	return 0;
 }
 
-void Employee::Display_All_Employees(int e_id)
+void Employee::Display_All_Employees()
 {
 	cout << "--- All Employees ---"<<endl;
 	Node* temp = head;
@@ -61,7 +60,7 @@ void Employee::Delete_Employee_ID(int e_id)
 	cout << "Employee with ID " << e_id << " deleted." << endl;
 }
 
-void Employee::Search_Employee_Name(char* name)
+int Employee::Search_Employee_Name(char* name)
 {
 	int c = 0, i=0;
 	Node* temp = head;
@@ -71,7 +70,8 @@ void Employee::Search_Employee_Name(char* name)
 		{
 			c = 0;
 			cout << "==search result==== " << endl;
-			cout << "emp name : " << name << endl;
+			//head->Display_All_Employees();
+			//cout << "emp name : " << name << endl;
 			break;
 		}
 		else
@@ -83,11 +83,12 @@ void Employee::Search_Employee_Name(char* name)
 	head = temp;
 	if (c)
 		cout << "not present" << endl;
+	return 0;
 }
 
 float Employee::Update_Salary_ID(int id, float sal)
 {
-	int c = 0, i = 0;
+	 
 	Node* temp = head;
 	while (head != NULL)
 	{
@@ -95,6 +96,7 @@ float Employee::Update_Salary_ID(int id, float sal)
 		{
 			head->setsalary(sal);
 			cout << "Salary updated for ID " << id << endl;
+			
 			break;
 		}
 		else
@@ -106,7 +108,14 @@ float Employee::Update_Salary_ID(int id, float sal)
 	return sal;
 }
 
-void Employee::Count_Employees(int c)
+
+void Employee::Count_Employees(int count)
 {
-	cout<<"Total Employees: "<<c<<endl;
+	Node* temp = head;
+	while (temp != nullptr)
+	{
+		count++;
+		temp = temp->getNext();
+	}
+	cout << "Total Employees: " << count << endl;
 }

@@ -1,0 +1,5 @@
+Vehicle Type: Car
+Vehicle ID: C100
+Rate: 15
+Distance: 100
+Days: 3

@@ -11,7 +11,7 @@ int main()
 	char name[20];
 	float sal;
 	int ch = 1;
-	int c = 0;
+	int count = 0;
 	
 	while (ch)
 	{
@@ -22,18 +22,18 @@ int main()
 		{
 		case 1:
 			//cout << "enter emp details as id, name, salary : " << endl;
-			cin >> id >> name >> sal;
-			c++;
-			e.Add_Employee(id, name, sal);
 			
+			cin >> id >> name >> sal;
+			e.Add_Employee(id, name, sal);
 			break;
 		case 2:
-			e.Display_All_Employees(id);
+			cout << endl;
+			e.Display_All_Employees();
 			break;
 		case 3:
 			//cout << "enter id which empolyee u want to delete : ";
+			cout << endl;
 			cin >> id;
-			c--;
 			e.Delete_Employee_ID(id);
 			break;
 		case 4:
@@ -43,12 +43,13 @@ int main()
 			break;
 		case 5:
 			//cout << "enter id & new sal to update: " << endl;
-			cin >> id;
-			cin >> sal;
+			cout << endl;
+			cin >> id>> sal;
 			e.Update_Salary_ID(id, sal);
 			break;
 		case 6:
-			e.Count_Employees(c);  // ---------
+			cout << endl;
+			e.Count_Employees(count);  // ---------
 			break;
 		case 0:
 			exit(0);

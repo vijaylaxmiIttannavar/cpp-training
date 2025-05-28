@@ -9,9 +9,9 @@ public:
 		head = nullptr;
 	}	
 	int  Add_Employee(int, char*, float);
-	void Display_All_Employees(int);
+	void Display_All_Employees();
 	void Delete_Employee_ID(int);
-	void Search_Employee_Name(char*);
+	int Search_Employee_Name(char*);
 	float Update_Salary_ID(int, float);
 	void Count_Employees(int);
 	//int	menu();
