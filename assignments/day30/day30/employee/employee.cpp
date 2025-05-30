@@ -70,15 +70,16 @@ int Employee::Search_Employee_Name(char* name)
 		{
 			c = 0;
 			cout << "==search result==== " << endl;
-			//head->Display_All_Employees();
+		    Display_All_Employees();
 			//cout << "emp name : " << name << endl;
 			break;
 		}
-		else
+		/*else
 		{
 			c++;
-			head = head->getNext();
-		}
+			
+		}*/
+		head = head->getNext();
 	}
 	head = temp;
 	if (c)
