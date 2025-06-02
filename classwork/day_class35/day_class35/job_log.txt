@@ -1,0 +1,14 @@
+[ERROR] File could not be opened.
+[ERROR] File could not be opened.
+[INFO] Successfully loaded 5 jobs.
+[INFO] Successfully loaded 5 jobs.
+[INFO] Selected Priority Scheduling.
+[INFO] Selected FIFO Scheduling.
+[DEBUG] Sorted jobs by FIFO (Job ID).
+[DEBUG] Executing Job ID: 1 | Priority: 2
+[DEBUG] Executing Job ID: 2 | Priority: 3
+[DEBUG] Executing Job ID: 3 | Priority: 1
+[DEBUG] Executing Job ID: 4 | Priority: 5
+[DEBUG] Executing Job ID: 5 | Priority: 4
+[INFO] All jobs executed in 680ms.
+[INFO] Log saved to job_log.txt.
