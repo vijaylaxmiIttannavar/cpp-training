@@ -1,0 +1,11 @@
+[2025-06-02 20:40:51.805][INFO] Successfully loaded 0 jobs.
+[2025-06-02 20:41:28.226][INFO] Successfully loaded 5 jobs.
+[2025-06-02 20:41:31.470][INFO] Selected FIFO Scheduling.
+[2025-06-02 20:41:33.653][DEBUG] Sorted jobs by FIFO (Job ID).
+[2025-06-02 20:41:33.654][DEBUG] Executing Job ID: 1 | Priority: 2
+[2025-06-02 20:41:33.767][DEBUG] Executing Job ID: 2 | Priority: 3
+[2025-06-02 20:41:33.937][DEBUG] Executing Job ID: 3 | Priority: 1
+[2025-06-02 20:41:34.073][DEBUG] Executing Job ID: 4 | Priority: 5
+[2025-06-02 20:41:34.266][DEBUG] Executing Job ID: 5 | Priority: 4
+[2025-06-02 20:41:34.404][INFO] All jobs executed in 750ms.
+[2025-06-02 20:41:38.117][INFO] Log saved to job_log.txt.

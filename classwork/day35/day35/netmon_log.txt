@@ -1,0 +1,10 @@
+[INFO] Successfully loaded 5 packets.
+[2025-06-02 20:37:34.619][INFO] Successfully loaded 5 packets.
+[DEBUG] Filtering packets by protocol: TCP
+[2025-06-02 20:37:42.615][DEBUG] Filtering packets by protocol: TCP
+[DEBUG] Checking for large packets...
+[2025-06-02 20:37:45.347][DEBUG] Checking for large packets...
+[WARNING] Packet 3 | ICMP | 1050 bytes exceeds threshold.
+[2025-06-02 20:37:45.348][WARNING] Packet 3 | ICMP | 1050 bytes exceeds threshold.
+[INFO] Logs saved to netmon_log.txt.
+[2025-06-02 20:37:46.649][INFO] Logs saved to netmon_log.txt.
