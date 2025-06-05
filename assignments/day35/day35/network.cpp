@@ -39,8 +39,6 @@ void log(LogLevel level, const string& message) {
     logFile.close();
 }
 
-
-
 struct Packet {
     int packetID;
     string protocol;

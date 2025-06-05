@@ -11,7 +11,7 @@ using namespace std;
 enum LogLevel { INFO, DEBUG, WARNING, ERROR };
 string getCurrentTime()
 {
-    //using namespace std::chrono;
+    
     auto now = chrono::system_clock::now();
     auto in_time_t = chrono::system_clock::to_time_t(now);
     auto ms = chrono::duration_cast<chrono::milliseconds>(now.time_since_epoch()) % 1000;

@@ -19,19 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="netmon_log.txt" />
-    <Text Include="packets.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="network.cpp">
-      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-    </ClCompile>
+    <ClCompile Include="p04.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8d540dbd-f695-4bc2-9634-ead60f8bb2a1}</ProjectGuid>
-    <RootNamespace>day35</RootNamespace>
+    <ProjectGuid>{b9113ce8-325b-45c8-8773-e0cf8ac5151e}</ProjectGuid>
+    <RootNamespace>day38</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
