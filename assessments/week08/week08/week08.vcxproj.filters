@@ -18,7 +18,7 @@
     <Text Include="instruction.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="prg2.cpp">
+    <ClCompile Include="p3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

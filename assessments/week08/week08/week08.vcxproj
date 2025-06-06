@@ -130,7 +130,7 @@
     <Text Include="instruction.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="prg2.cpp" />
+    <ClCompile Include="p3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
