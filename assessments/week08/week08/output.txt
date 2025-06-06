@@ -1,0 +1,2 @@
+First 16 Memory Contents:
+00: 15
