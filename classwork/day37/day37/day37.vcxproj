@@ -19,13 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="p08.cpp" />
+    <ClCompile Include="vector_score.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b9113ce8-325b-45c8-8773-e0cf8ac5151e}</ProjectGuid>
-    <RootNamespace>day38</RootNamespace>
+    <ProjectGuid>{41a8c72d-ca65-4df4-8bec-8b6246a54deb}</ProjectGuid>
+    <RootNamespace>day37</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

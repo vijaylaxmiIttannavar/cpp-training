@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="p08.cpp">
+    <Text Include="instruction.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="prg2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
