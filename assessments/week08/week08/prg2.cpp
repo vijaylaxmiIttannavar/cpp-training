@@ -107,7 +107,8 @@ int main()
     ifstream iss("instruction.txt");
     string action;
 
-    while (iss >> action) {
+    while (iss >> action)
+    {
         if (action == "MOV")
         {
            move_operation(d);
