@@ -1,7 +1,6 @@
 #include<iostream>
 #include<vector>
 #include <unordered_map>
-
 using namespace std;
 
 class Solution
@@ -14,7 +13,7 @@ public:
         for (int i = 0;i < nums.size(); i++)
         {
             int t = target - nums[i];
-            if (nm.find(t) != nm.end())
+            if ( nm.find(t) != nm.end() )
             {
                 return { nm[t], i };
             }
@@ -32,6 +31,5 @@ int main()
 
     for (auto i : nums)
         cout << i;
-
 }
 

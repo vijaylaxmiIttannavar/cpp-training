@@ -3,6 +3,7 @@
 #include<fstream>
 #include<vector>
 #include<sstream>
+#include<iomanip>
 
 using namespace std;
 
@@ -79,7 +80,8 @@ int main() {
         else if (action == "ADD" || action == "SUB" || action == "MUL" || action == "DIV") {
             arithmetic_operation(d, action);
         }
-        else if (action == "HLT") {
+        else if (action == "HLT")
+        {
             stop(d);
         }
     }
