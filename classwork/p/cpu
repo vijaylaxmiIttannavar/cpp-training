@@ -1,0 +1,72 @@
+#include <iostream>
+#include <fstream>
+#include <queue>
+#include <thread>
+#include <mutex>
+#include <vector>
+#include <sstream>
+#include <chrono>
+
+using namespace std;
+
+struct Task {
+    string id;
+    int load;
+};
+
+queue<Task> taskQueue;
+mutex queueMutex;
+
+void processTask(int cpuID) {
+    while (true) {
+        Task task;
+        {
+            lock_guard<mutex> lock(queueMutex);
+            if (taskQueue.empty()) return; // No more tasks to process
+            task = taskQueue.front();
+            taskQueue.pop();
+        }
+
+        cout << "CPU-" << cpuID << " picked Task " << task.id << " (Load: " << task.load << ")\n";
+        this_thread::sleep_for(chrono::seconds(task.load));
+        cout << "CPU-" << cpuID << " finished Task " << task.id << "\n";
+    }
+}
+
+int main() {
+    ifstream file("input.txt");
+    if (!file) {
+        cerr << "Error opening input file.\n";
+        return 1;
+    }
+
+    string line;
+    int cpuCount = 0;
+    vector<thread> cpuThreads;
+
+    while (getline(file, line)) {
+        istringstream iss(line);
+        if (line.rfind("CPUs:", 0) == 0) {
+            iss.ignore(6);
+            iss >> cpuCount;
+        } else {
+            Task task;
+            task.id = line.substr(0, line.find(":"));
+            iss.ignore(7);
+            iss >> task.load;
+            taskQueue.push(task);
+        }
+    }
+    file.close();
+
+    for (int i = 1; i <= cpuCount; ++i) {
+        cpuThreads.emplace_back(processTask, i);
+    }
+
+    for (auto& thread : cpuThreads) {
+        thread.join();
+    }
+
+    cout << "All tasks completed.\n";
+    return 0;
+}
