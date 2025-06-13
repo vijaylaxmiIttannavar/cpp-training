@@ -14,7 +14,7 @@ using namespace std;
 	MOC, MTC, SMO-MO, SMS-MT
 };  */
 
-struct Signup
+class Signup
 {
 public:
 	int companyid;
@@ -24,7 +24,7 @@ public:
 	int MBdown;
 	int MBup;
 public:
-	Signup(int cmpid, string name, int custid, string str, int MBup, int MBdown) : companyid(cmpid), companyname(name), cid(custid), str(str), MBup(MBup), MBdown(MBdown) {}
+	//Signup(int cmpid, string name, int custid, string str, int MBup, int MBdown) : companyid(cmpid), companyname(name), cid(custid), str(str), MBup(MBup), MBdown(MBdown) {}
 };
 
 
@@ -36,7 +36,8 @@ public:
 	int custmer_bill(vector<Signup>& sig)
 	{
 		int cid;
-		//vector<opr>o;
+		string companyname;
+		vector<Signup>sig;
 		int v = 0, p = 0, val = 0;
 		lock_guard<std::mutex> lock(mtx);
 		cout << " Customers Data Base : " << endl;
@@ -83,7 +84,7 @@ public:
 
 	int interpator_bill(vector<Signup>& sig)
 	{
-		int v = 0, p = 0, val = 0;
+		static int v = 0, p = 0, val = 0;
 		lock_guard<std::mutex> lock(mtx);
 		ofstream file("operator.txt", ios::app);
 		if (!file) {

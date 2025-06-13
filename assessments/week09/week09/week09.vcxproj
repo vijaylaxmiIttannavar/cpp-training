@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="prg02.cpp" />
+    <None Include="data.cdr" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="data.cdr" />
+    <ClCompile Include="prg02.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
