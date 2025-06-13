@@ -1,0 +1,2 @@
+Auction: Laptop - Status: Closed
+Winner: BuyerC - Amount: $130
