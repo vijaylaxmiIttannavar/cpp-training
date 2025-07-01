@@ -22,7 +22,7 @@
     <None Include="data.cdr" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="prg02.cpp" />
+    <ClCompile Include="p1.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

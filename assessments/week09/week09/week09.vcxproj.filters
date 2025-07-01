@@ -18,7 +18,7 @@
     <None Include="data.cdr" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="prg02.cpp">
+    <ClCompile Include="p1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

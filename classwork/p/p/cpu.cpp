@@ -36,8 +36,6 @@ public:
         taskQueue.pop();
         return true;
     }
-
-
 };
 
 void executeTask(int cpuID, TaskQueue& taskQueue) {
@@ -46,8 +44,7 @@ void executeTask(int cpuID, TaskQueue& taskQueue) {
         std::cout << "CPU-" << cpuID << " picked Task " << task.taskID
             << " (Load: " << task.load << ")" << std::endl;
 
-      
-        std::this_thread::sleep_for(std::chrono::seconds(task.load));
+     std::this_thread::sleep_for(std::chrono::seconds(task.load));
 
         std::cout << "CPU-" << cpuID << " finished Task " << task.taskID << std::endl;
     }

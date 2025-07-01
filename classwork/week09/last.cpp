@@ -28,7 +28,7 @@ public:
 		int cid1;
 
 public:
-	//Signup(int cmpid, string name, int custid, string str, int vl, int MBup, int MBdown, int cmpid1, int custid1) : companyid(cmpid), companyname(name), cid(custid), str(str), vl(vl), MBup(MBup), MBdown(MBdown), companyid1(cmpid), cid1(custid) {}
+	Signup(int cmpid, string name, int custid, string str, int vl, int MBup, int MBdown, int cmpid1, int custid1) : companyid(cmpid), companyname(name), cid(custid), str(str), vl(vl), MBup(MBup), MBdown(MBdown), companyid1(cmpid), cid1(custid) {}
 };
 
 
@@ -147,7 +147,7 @@ int main()
 {
 
 	cout << "welcome " << endl;
-	vector<Signup>sig;
+	vector<Signup>sig {}
 	login l;
 	menu(sig);
 
