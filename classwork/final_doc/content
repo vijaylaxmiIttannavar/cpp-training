@@ -1,0 +1,56 @@
+1. Introduction
+The ProgramInterface module provides a command-line interface (CLI) for interacting with the GW-BASIC-like interpreter. It enables the user to input, edit, and submit commands in real-time, with support for special key handling and screen rendering. The module mimics the behavior of a traditional DOS-based GW-BASIC environment with live editing and function key shortcuts.
+
+ implements a console-based command-line editor in C++ with enhanced input handling,
+including:
+- Arrow key navigation
+- Special key commands (F1-F10)
+- Cursor-aware input editing
+- A REPL that supports interactive editing.
+The system mimics retro-style BASIC terminal interfaces and is suitable for embedding into interpreters or
+command shells.
+  
+2. Design Description
+The ProgramInterface is designed with modular separation of concerns:
+
+CommandLineEditor: Manages user input, cursor movement, editing, and line submission.
+
+ScreenRenderer: Responsible for drawing the input line and moving the cursor on screen.
+
+SpecialKeyHandler: Intercepts and processes special function keys (F1–F10) by injecting predefined commands into the editor.
+
+These components communicate through shared structures and are integrated with the platform-independent SystemInterface for terminal I/O.
+
+3. Class Diagram
+
+4. class structure
+CommandLineEditor  
+ ├── getLineFromCli(std::string&): Reads user input interactively 
+ ├── SpecialKeyHandler(...): Attaches special key handle
+ └──   Uses ScreenRenderer and SystemInterface
+
+SpecialKeyHandler
+ └── handleSpecialKey(...): Handles function keys and injects command
+
+ScreenRenderer
+ └── redrawBuffer(), moveCursor()
+
+internal datamemeber
+  *CommandLineEditor: - buffer:
+ Current input - cursorPosition: Index in buffer - specialKeyHandler: Handles F1-F10
+ check_SKey (Struct): - isSpecial: True if key is special - ch: Normal character - sKey: Enum for F1-F10, arrows
+
+*SystemInterface with program interface
+- init(): Setup stub
+- readKey(): Reads a character or key
+- putChar(): Prints one char
+- getChar(): Reads one char using _getch()
+- printString(): Prints full string
+- clearScreen(): ANSI clear
+- moveCursor(x, y): Positions cursor
+
+.conclusion
+The Program Interface module in our GW-BASIC interpreter enables interactive user input with features like cursor movement, real-time editing, and backspace handling. It cleanly separates responsibilities across CommandLineEditor, ScreenRenderer, and SpecialKeyHandler. Function keys are mapped to BASIC commands for quick access. The design ensures modularity, ease of extension, and a classic BASIC feel. Overall, this module enhances
+ usability while maintaining maintainable and scalable code structure. 
+
+  
