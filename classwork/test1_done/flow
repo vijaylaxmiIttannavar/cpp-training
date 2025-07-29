@@ -1,0 +1,50 @@
+gw_basic_64/
+├── CMakeLists.txt
+├── README.md
+├── main.cpp
+├── gw_basic/
+│   ├── GWBasic64.h
+│   ├── GWBasic64.cpp
+│   ├── ProgramInterface/
+│   │   ├── CommandLineEditor.h
+│   │   ├── SpecialKeyHandler.h
+│   │   └── ScreenRenderer.h
+│   ├── Storage/
+│   │   ├── ProgramMemory.h
+│   │   └── ProgramMemory.cpp
+│   ├── Lexer/
+│   │   ├── Lexer.h
+│   │   └── Lexer.cpp
+│   ├── Parser/
+│   │   ├── Parser.h
+│   │   └── Parser.cpp
+│   ├── Runtime/
+│   │   ├── StatementExecutor.h
+│   │   ├── StatementExecutor.cpp
+│   │   ├── ExpressionEvaluator.h
+│   │   ├── ExpressionEvaluator.cpp
+│   │   ├── SymbolTable.h
+│   │   └── SymbolTable.cpp
+│   ├── IO/
+│   │   ├── ConsoleIO.h
+│   │   ├── ConsoleIO.cpp
+│   │   ├── FileIO.h
+│   │   ├── FileIO.cpp
+│   ├── System/
+│   │   ├── SystemInterface.h
+│   │   ├── SystemInterface.cpp
+│   │   ├── MemoryInterface.h
+│   │   ├── MemoryInterface.cpp
+│   ├── Errors/
+│   │   ├── ErrorHandler.h
+│   │   └── ErrorHandler.cpp
+│   └── Utils/
+│       ├── Token.h
+│       ├── ASTNode.h
+│       └── Utils.h
+└── tests/
+    ├── CMakeLists.txt
+    ├── test_main.cpp
+    ├── test_parser.cpp
+    └── test_executor.cpp   
+it is my project please genaerate entity relationshilp diagram for this 
