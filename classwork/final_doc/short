@@ -1,0 +1,44 @@
+ProgramInterface Module Documentation
+1. Introduction
+The ProgramInterface module provides a user interface layer for a GW-BASIC-style interpreter. It supports live command-line editing, special key handling (e.g., function keys), and console rendering for an interactive text-based environment. This module ensures users can type, edit, and execute BASIC-like commands efficiently via keyboard input.
+
+2. Dependencies
+The module depends on the following components:
+SystemInterface: Provides platform-independent I/O (input from keyboard, output to screen).
+ScreenRenderer: Handles cursor movement and buffer redraws.
+SpecialKeyHandler: Maps function keys (F1–F10) to command shortcuts like RUN, LIST, etc.
+check_SKey structure: Encapsulates both normal and special key input.
+
+3. Class Descriptions
+*CommandLineEditor
+Handles line-based text input from the user, including editing (insertion, deletion), cursor navigation, and interpretation of special keys like ENTER, ESC, arrows.
+
+*SpecialKeyHandler
+Captures function key (F1–F10) input and maps them to predefined commands (e.g., RUN, LIST). Injects the mapped command into the input buffer.
+
+ *ScreenRenderer
+Provides methods to visually render the input buffer and control the cursor's on-screen position for a DOS-style interface.
+
+4. Public Methods
+CommandLineEditor
+CommandLineEditor();
+void setSpecialKeyHandler(SpecialKeyHandler* handler);
+bool getLineFromCli(std::string& line);
+setSpecialKeyHandler: Links a handler to interpret special keys.
+getLineFromCli: Captures user input line with support for editing and special key behavior.
+
+SpecialKeyHandler
+bool handleSpecialKey(const check_SKey& key, std::string& inputBuffer);
+Maps function keys to their command string and injects them into the editor buffer.
+
+ScreenRenderer
+static void moveCursor(int pos);
+static void redrawBuffer(const std::string& buffer, int cursorPos);
+moveCursor: Repositions the cursor within the input line.
+redrawBuffer: Repaints the current input line on screen with updated text and position.
+
+5. Internal Data Members
+CommandLineEditor
+std::string buffer;             // Holds the current input text
+int cursorPosition;            // Current cursor index in buffer
+SpecialKeyHandler* specialKeyHandler; // Reference to F-key handler
