@@ -1,0 +1,24 @@
+1.       You will find wiki websites in work environments and public spaces as a powerful collaboration tool. Wikipedia, the most popular encyclopedia and one of the most popular websites of all times work with help of Mediawiki, an open-source wiki software.
+
+Your goal is to setup a working website powered by mediawiki on a VM running LAMP stack - Linux,  Apache, MySQL, PHP.  If this is not possible for any technical reason, setup mediawiki on windows using WAMP stack.
+
+·       We want to see how you approach this task, and how you try to solve any obstacles that you may encounter during the execution.
+
+·        Hence, detail every step along the way- while the end goal matters the most, the journey is also important.
+
+·       You may use VirtualBox or any other vm software you may please for hosting the virtual machine.
+
+·        In case you fail to set up VM/Linux, try using Windows, but you must detail all the steps you tried to set up Linux.
+
+ 
+
+2.       Set-up a backup mechanism for the MediaWiki server that you just created above,
+
+a.       You are free to use any client options or available solution for data back-up.
+
+b.       The backup mechanism, that you are designing must take a daily backup of all data stored in SQL, and any other data that mediawiki creates, so we can successfully restore your wiki pages in case of a disaster.
+
+ 
+
+Prepare a document with each and every step (Try to document everything including your mistakes), so that we can evaluate your approaches easily. Your document will be also a part of evaluation, so make it professional.
+
